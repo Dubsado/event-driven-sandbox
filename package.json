@@ -1,0 +1,26 @@
+{
+  "name": "redis-producer-consumer",
+  "version": "\\",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start:redis:producer": "npx ts-node redis_src/producer.ts",
+    "start:redis:consumer": "npx ts-node redis_src/consumer.ts",
+    "start:kafka:producer": "npx ts-node kafka_src/producer.ts",
+    "start:kafka:consumer": "npx ts-node kafka_src/consumer.ts"
+  },
+  "dependencies": {
+    "@types/node": "^18.16.0",
+    "@upstash/redis": "^1.20.4",
+    "dotenv": "^16.0.3",
+    "ioredis": "^5.3.2",
+    "kafkajs": "^2.2.4",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/kafkajs": "^1.9.0",
+    "@types/uuid": "^9.0.1"
+  }
+}
